@@ -5,7 +5,7 @@ set -o nounset
 
 python manage.py migrate --noinput
 
-# Render Shell ishlatmasdan avtomatik superuser (admin) yaratish
+# Avtomatik admin yaratish
 python manage.py shell -c "
 from django.contrib.auth import get_user_model;
 User = get_user_model();
